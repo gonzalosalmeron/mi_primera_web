@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The 3D Factory</title>
+  <link rel="stylesheet" href="estilo/estilo.css">
+  <script src="javascript/javascript.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="navbar">
+    <nav>
+      <a id="logo" href="#introduction"><image src="imagenes/logo.png" width="60px" style="margin: -5px 100px;"></image></a>
+      <div id="navbar-right">
+      <a href="#introduction">Inicio</a>
+      <a href="#tiposTitulo">Tipos</a>
+      <a href="#funcionamientoTitulo">Funcionamiento</a>
+      <a href="#marcas">Marcas</a>
+      </div>
+    </nav>
+  </div>
+<!--************************ INTRODUCCIÓN ************************-->
+  <section id="introduction">
+    <div class="introduccion-texto">
+      <p>IMPRESORAS 3D</p>
+    </div>
+  </section>
+  <!--************************ INTRODUCCIÓN TEXTO ************************-->
+  <section id="introduction-text">
+    <div class="introimpresoras">
+      <p><image src="imagenes/comillas.svg"></image>  Una impresora 3D es básicamente una máquina capaz de realizar modelos 3d diseñados anteriormente en un ordenador en un modelo físico.  <image src="imagenes/comillas.svg" style="transform: rotate(180deg); "></image></p>
+    </div>
+  </section>
+  <!--************************ TIPOS IMPRESORAS 3D ************************-->
+  <section id="tiposTitulo">
+    <p>Tipos de Impresoras 3D</p>
+  </section>
+  <section id="tiposImpresoras" class="grid1col">
+    <div class="col1">
+      <image src="imagenes/impresorafdm.jpg" ></image>
+      <p>Impresoras FDM</p>
+    </div>
+    <div class="col1">
+      <image src="imagenes/impresorasla.png"></image>
+      <p>Impresoras SLA</p>
+    </div>
+    <div class="col1">
+      <image src="imagenes/impresorasls (1).png"></image>
+      <p>Impresoras SLS</p>
+    </div>
+  </section>
+  <!--************************ FUNCIONAMIENTO IMPRESORAS ************************-->
+  <section id="funcionamientoTitulo">
+    <p>Funcionamiento Impresoras</p>
+  </section>
+  <section id="funcionamiento" class="grid2col">
+    <div class="col2">
+      <p>Las impresoras 3D utilizan múltiples tecnologías de fabricación e intentaremos explicar de forma sencilla cómo funcionan. Las impresoras 3D lo que hacen es crear un objeto con sus 3 dimensiones y esto lo consigue construyendo capas sucesivamente hasta conseguir el objeto deseado.</p>
+      <image src="imagenes/funcionamientofdm.png"></image>
+    </div>
+    <div class="col2">
+      <p>En la imagen anterior vemos 3 figuras. La primera es la que dibujamos nosotros mismos en un papel, por ejemplo, del objeto que queremos imprimir en sus 3 dimensiones, después, con un programa de CAD diseñamos ese objeto en nuestro ordenador que sería la segunda figura, y por último separamos ese objeto en capas para ir imprimiendo capa por capa en la impresora de 3 dimensiones, que es lo que vemos en la tercera figura. Es decir, de un boceto en papel podemos conseguir un objeto en la realidad con el material adecuado. El proceso que utilizan estas impresoras para crear el objetos por capas se llama "proceso aditivo". <br>Hoy en día ya existen incluso escaner 3D que nos pueden escanear un objeto y directamente verlo en nuestro ordenador para luego imprirlo, sin necesidad de tener que dibujarlo con el ordenador. Esto lo hace todavía más sencillo, de hecho con estos escaneres crear un objeto en 3D es casi como hacer una simple foto.</p>
+    </div>
+    <div class="col2">
+      <p>En las impresoras SLA el funcionamiento es parecido, ya que, en lugar de fundir el material, utilizan la foto solidificación, endureciendo la resina (el material que utilizan) a través de un láser.</p>
+      <image src="imagenes/funcionamientosla.png" ></image>
+    </div>
+    <div class="col2">
+      <iframe id="videoSLA" width="560" height="315" src="https://www.youtube.com/embed/EeiWtxi-mSw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p style="color: rgb(82, 82, 82);">*Breve vídeo explicativo sobre las impresoras SLA</p>
+    </div>
+  </section>
+  <!--************************ SECTION MARCAS ************************-->
+  <section id="linea">
+    <div class="lineaNegra"></div>
+  </section>
+  <section id="marcasTitulo">
+    <p>Marcas</p>
+  </section>
+  <section id="marcas" class="grid3col">
+    <div class="col3">
+      <img src="imagenes/creality.jpg" style="width: 160px; margin: 20px 0px;">
+    </div>
+    <div class="col3dos">
+      <img src="imagenes/prusa.png" style="width: 100px; margin: 40px 0px;">
+    </div>
+    <div class="col3">
+      <img src="imagenes/artillery.jpg" style="width: 140px; margin-right: 20px;">
+    </div>
+    <div class="col3ultima">
+      <img src="imagenes/anycubic.png" style="width: 200px; margin-left: 20px;">
+    </div>
+  </section>
+  <section class="espacio"></section>
+  <!--************************ SECTION FOOTER ************************-->
+  <section id="footer" class="grid4col">
+    <div class="col4">
+      <p>Redes sociales: </p>
+      <a href="https://www.instagram.com/the3dfactory_/" target="_blank"><img src="imagenes/instagram.png""></img></a>
+      <a href="https://www.facebook.com/the3dfactoryesp" target="_blank"><img src="imagenes/facebook.png"></img></a>
+    </div>
+    <div class="col4Info">
+      <p>Web Realizada por:<br>Gonzalo Salmerón Robles<br>IES Campanillas 1º DAM</p>
+    </div>
+  </section>
+</body>
+</html>
