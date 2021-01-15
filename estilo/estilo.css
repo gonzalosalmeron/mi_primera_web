@@ -167,9 +167,10 @@ button:hover {
 .grid2col img {
   width: 100%;
   border-radius: 40px;
+  transition: opacity 2s;
 }
 .col2 img:hover {
-  opacity: 0;
+  opacity: 80%;
   transition: 1s;
 }
 /****************************** FRASE DE LA EMPRESA ****************************/
@@ -237,7 +238,63 @@ button:hover {
   margin: 20px 40px;
 }
 
-
+/****************************** GALERIA ****************************/
+.row {
+  line-height: 1.2;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 4px;
+  -moz-column-count: 5;
+  -moz-column-gap: 4px;
+  column-count: 4;
+  column-gap: 4px; 
+  margin-top: 10px;
+  transition: 2s;
+}
+.row img {
+  width: 100% !important;
+  height: auto !important;
+}
+/****************************** CONTACTO  ****************************/
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #585f58;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 1s;
+}
+input[type=submit]:hover {
+  background-color: #7e298a;
+}
+.formulario {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 30px 0px;
+  font-family: tipografia3;
+}
+/****************************** ENVIADO CORRECTAMENTE ****************************/
+#enviado {
+  font-family: tipografia3;
+  height: auto;
+  text-align: center;
+  padding: 20vh 0px;
+  font-size: 18px;
+}
+#enviado img {
+  box-shadow: 0px 0px 10px 0px black;
+}
 /****************************** FOOTER ****************************/
 footer {
   background-color: #2a2c32;
@@ -334,6 +391,10 @@ footer {
     padding: 75px 80px;
     height: auto;
   }
+  .row {
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
 }
 @media screen and (max-width: 902px) {
   .topnav {
@@ -350,6 +411,17 @@ footer {
   }
   .hero_col img {
     width: 300px;
+  }
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .row {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  #enviado img {
+    width: 500px;
   }
 }
 @media screen and (max-width: 645px) {
@@ -391,5 +463,21 @@ footer {
   }
   .grid6col {
     margin: 0px;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .row {
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+  #enviado img {
+    width: 390px;
+  }
+}
+@media screen and (max-width: 428px) {
+  #enviado img {
+    width: 300px;
   }
 }
