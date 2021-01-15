@@ -1,0 +1,356 @@
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(255, 255, 255);
+}
+* {
+  margin: 0%;
+}
+.container_width {
+  width: 1175px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/************** SECCIÓN DE FUENTES *************************/
+@font-face{
+  src: url(../tipografias/ChunkFive-Regular.otf);
+  font-family: 'titulo1';
+}
+@font-face{
+  src: url(../tipografias/EathomaSansFont.ttf);
+  font-family: 'tipografia1';
+}
+@font-face{
+  src: url(../tipografias/Yantramanav-Medium.ttf);
+  font-family: 'tipografia2';
+}
+@font-face{
+  src: url(../tipografias/Corporate\ S\ Bold.otf);
+  font-family: 'tipografia3';
+}
+@font-face{
+  src: url(../tipografias/Corporate\ S\ SC\ Regular.otf);
+  font-family: 'tipografia4';
+}
+/************** BARRA DE NAVEGACIÓN ************************/
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0px 0px 20px 0px black;
+  background-color: white;
+}
+#logo-navbar img{
+  height: 60px;
+  margin: 10px;
+  padding: 0px;
+}
+#logo-movil {
+  display: none;
+}
+.topnav {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1175px;
+}
+.navbar-right {
+  float: right;
+}
+.navbar-right a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  margin: 30px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: tipografia3;
+  overflow: hidden;
+}
+.topnav a:hover {
+  color: rgba(49, 83, 196, 0.849);
+}
+.topnav .icon {
+  display: none;
+}
+/****************************** HERO SECTION ****************************/
+#hero {
+  position: relative;
+  background-color: #2a2c32;
+  overflow: hidden;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  padding: 100px 0px;
+}
+.grid_hero {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.hero_col p{
+  font-family: tipografia3;
+  color: white;
+  font-size: 30px;
+}
+.hero_col img {
+  width: 500px;
+}
+#tipos-impresion-boton {
+  color: white;
+  background-color: rgb(223, 100, 0);
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 300px;
+  padding: 10px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+#materiales-boton {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  border-radius: 6px;
+  width: 300px;
+  padding: 10px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+button {
+  transition: opacity 1s;
+  font-family: tipografia2;
+}
+button:hover {
+  opacity: 50%;
+}
+/****************************** FRASE INTRODUCCION ****************************/
+#frase-intro {
+  padding: 75px 120px 75px 120px;
+  height: auto;
+}
+.introduccion img {
+  width: 80px;
+  margin: 1px 20px;
+  float: left;
+}
+.introduccion p{
+  font-family: tipografia3;
+  font-size: 20px;
+}
+/****************************** TIPOS DE IMPRESORAS ****************************/
+#tipos-impresoras {
+  background-color: white;
+}
+#tipos-impresoras p {
+  font-size: 30px;
+  font-family: tipografia2;
+  margin-bottom: 8px;
+  color: #2a2c32;
+}
+.grid2col {
+  position: relative;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  text-align: center;
+}
+.col2 {
+  background-color: white;
+  margin: 30px 20px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgb(116, 116, 116);
+  border-radius: 10px;
+}
+.grid2col img {
+  width: 100%;
+  border-radius: 40px;
+}
+.col2 img:hover {
+  opacity: 0;
+  transition: 1s;
+}
+/****************************** FRASE DE LA EMPRESA ****************************/
+#frase-empresa {
+  background-color: #2E7EA3;
+  padding: 100px 0px;
+  font-size: 28px;
+  font-family: tipografia3;
+  color: white;
+}
+#frase-empresa h5 {
+  float: right;
+}
+/****************************** POSTPROCESADO IMPRESORAS ****************************/
+#acabado-3d {
+  padding: 70px 0px;
+}
+.grid3col {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.col3 {
+  margin: 0px 20px;
+}
+.col3 h1 {
+  text-align: left;
+  font-family: tipografia2;
+  font-size: 28px;
+  margin-top: 10px;
+}
+.col3 p {
+  text-align: left;
+  font-family: tipografia2;
+  font-size: 20px;
+}
+.col3 img {
+  width: 100%;
+}
+.funcionamiento-boton {
+  background-color: rgba(133, 133, 133, 0);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+/****************************** FOOTER ****************************/
+footer {
+  background-color: #2a2c32;
+}
+#redes-sociales {
+  float: left;
+}
+#redes-sociales img {
+  float: left;
+  margin: 6px;
+  width: 40px;
+}
+.grid5col {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 220px;
+}
+.col5 {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  size: 30px;
+  font-family: tipografia3;
+  font-size: 20px;
+}
+.col5 img {
+  width: 30px;
+  color: red;
+}
+/****************************** MEDIA QUERING ****************************/
+@media screen and (max-width: 1200px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar-right a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .col1 p {
+    font-size: 22px;
+  }
+  .col3 iframe {
+    width: 500px;
+  }
+  .col3 img {
+    width: 80%;
+  }
+  .container_width {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .topnav {
+    width: 900px;
+  }
+  .container_width {
+    width: 900px;
+  }
+  #video-sla {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1002px) {
+  .grid2col {
+    margin: 40px 0px;
+  }
+  #video-sla {
+    width: 300px;
+  }
+  .topnav {
+    width: 820px;
+  }
+  .container_width {
+    width: 800px;
+  }
+  #frase-intro {
+    padding: 75px 80px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 902px) {
+  .topnav {
+    width: 600px;
+  }
+  .container_width {
+    width: 550px;
+  }
+  .grid3col {
+    grid-template-columns: 100%;
+  }
+  .grid2col {
+    grid-template-columns: 100%;
+  }
+  .hero_col img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 645px) {
+  #frase-intro {
+    padding: 75px 0px;
+    height: auto;
+  }
+  #hero {
+    height: auto;
+  }
+  .container_width {
+    width: 90%;
+  }
+  .grid_hero {
+    grid-template-columns: auto;
+  }
+  .hero_col img {
+    display: none;
+  }
+  .topnav {
+    width: auto;
+  }
+  #logo-pc {
+    display: none;
+  }
+  #logo-movil {
+    display: inline;
+  }
+  #logo-navbar img {
+    margin: 10px 20px;
+  }
+}
