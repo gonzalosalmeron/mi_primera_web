@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   background-color: rgb(255, 255, 255);
 }
 * {
@@ -457,9 +458,9 @@ footer {
     width: 100%;
   }
   #funcionamiento img {
-    float: unset;
-    display: block;
     width: 100%;
+    height: auto;
+    margin: 10px 3px
   }
   .grid6col {
     margin: 0px;
@@ -473,11 +474,6 @@ footer {
     column-count: 1;
   }
   #enviado img {
-    width: 390px;
-  }
-}
-@media screen and (max-width: 428px) {
-  #enviado img {
-    width: 300px;
+    width: 100%;
   }
 }
